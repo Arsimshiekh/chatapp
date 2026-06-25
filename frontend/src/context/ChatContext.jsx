@@ -9,7 +9,7 @@ const ChatContext = createContext(null);
 const initialState = {
   onlineUsers: [],
   globalMessages: [],
-  typingByScope: {}, // scope -> array of usernames currently typing
+  typingByScope: {}, // scope ->  array of usernames currently typing
   incomingRequests: [], // [{ requestId, from }]
   outgoingRequest: null, // { requestId, to }
   rooms: {}, // roomId -> { id, type, partner, messages: [] }
